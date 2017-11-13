@@ -1,27 +1,40 @@
+*
+{
+	box-sizing: border-box;
+}
+
 header
 {
-  background-color: #333333;	
+	height: 84px;
+	margin: 0 0 40px 0;
+  padding: 0;
+  background-color: #efeee7;
 }
 
 h1
 {
-	/*background-color: black;*/
-	color: #eee;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	font-size: 28px;
+	margin: 0;
+	color: #080677;
+  font-family: "Georgia",Times New Roman,Times,serif;
+	font-size: 32px;
 }
 
 h2
 {
+	margin: 0;
+	color: #080677;
+	font-family: "Georgia",Times New Roman,Times,serif;
 	font-size: 24px;
 }
 
 body
 {
-  background-color: #efeee7;
-  font-family: "Georgia",Times New Roman,Times,serif;
+	/* no matter what I tried, no matter which class I put the
+	 * background-image into, I could not get it to extend to
+	 * the edges for the main_content, but not the header and
+	 * footer
+	 */
+	background-image: url("../images/vintage-concrete.png");
   color: #333333;
 	margin: 0;
   padding: 0;
@@ -32,30 +45,66 @@ a:link
   color: #d21034;
 }
 
-.container
+.no_image
 {
-	width: 1024px;
-  margin: 0 auto;
+	background-image: none;
+  background-color: #efeee7;
 }
 
-#main-bio
+.name
 {
+  background-color: #080677;
+  color: #eee;
   float: left;
-  width: 70%;
+  padding: 30px;
+}
+
+.nav
+{
+	position: relative;
+	top: 33px;
+	font-size: 18px;
+	float: right;
+	margin: auto 5px auto 25px;
+}
+
+.heading_pad
+{
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.margin
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.all_content
+{
+	width: 960px;
+  margin: 0 auto;
+	padding-bottom: 30px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  line-height: 150%;
+}
+
+.main_content
+{
+	width: 650px;
+  margin: 0 auto;
+  float: left;
+}
+
+.sidebar
+{
+	width: 270px;
+  margin: 0 auto;
+  float: right;
 }
 
 #bio-image
 {
   float: left;
   width: 200px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-
-#contact-info
-{
-  float: left;
-  width: 30%;
-  line-height: 150%;
-
 }
