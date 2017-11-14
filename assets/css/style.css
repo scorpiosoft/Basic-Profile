@@ -11,6 +11,20 @@ header
   background-color: #efeee7;
 }
 
+footer
+{
+	display: block;
+	clear: both;
+	height: 84px;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+  background-image: none;
+  background-color: #666;
+  border-top: 5px solid #080677;
+  /*margin: 40px 0 0 0;*/
+}
+
 h1
 {
 	margin: 0;
@@ -29,15 +43,13 @@ h2
 
 body
 {
-	/* no matter what I tried, no matter which class I put the
-	 * background-image into, I could not get it to extend to
-	 * the edges for the main_content, but not the header and
-	 * footer
-	 */
 	background-image: url("../images/vintage-concrete.png");
   color: #333333;
 	margin: 0;
   padding: 0;
+	/* sticky footer */
+  height: 100%;
+  margin: 0;
 }
 
 a:link
@@ -47,6 +59,8 @@ a:link
 
 .no_image
 {
+	/* I understand the technical reasons for the assignment to require a separate background for the content vs the generic textured background, but I think it looks better with just the texture.
+	*/
 	background-image: none;
   background-color: #efeee7;
 }
@@ -74,10 +88,28 @@ a:link
 	padding-bottom: 20px;
 }
 
-.margin
+.lr_margin
 {
 	margin-left: 20px;
 	margin-right: 20px;
+}
+
+.tb_padding
+{
+	padding-top: 20px;
+	padding-bottom: 30px;	
+}
+
+.icon
+{
+	width: 70px;
+	border: 0;
+	float: left;
+	margin: 20px 5px 30px 0;
+/* I like the look of this better, but assignment wants above margins
+	margin-right: 5px;
+	margin-bottom: 10px;
+*/
 }
 
 .all_content
@@ -92,7 +124,7 @@ a:link
 .main_content
 {
 	width: 650px;
-  margin: 0 auto;
+  margin: 0 auto 40px 0;
   float: left;
 }
 
@@ -108,3 +140,19 @@ a:link
   float: left;
   width: 200px;
 }
+
+.foot
+{
+	padding-top: 50px;
+}
+
+/*
+ * sticky footer method #3
+ */
+.wrapper {
+  min-height: calc(100vh - 84px);
+}
+/*.footer {
+  height: 84px;
+}*/
+
