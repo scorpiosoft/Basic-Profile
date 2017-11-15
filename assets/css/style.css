@@ -5,7 +5,7 @@
 
 header
 {
-	height: 84px;
+	height: 92px;
 	margin: 0 0 40px 0;
   padding: 0;
   background-color: #efeee7;
@@ -15,7 +15,8 @@ footer
 {
 	display: block;
 	clear: both;
-	height: 84px;
+	height: 92px;
+	width: 100%;
   padding: 0;
   text-align: center;
   font-size: 12px;
@@ -52,9 +53,14 @@ body
   margin: 0;
 }
 
+p
+{
+	margin-bottom: 15px;
+}
+
 a:link
 {
-  color: #d21034;
+  color: #080677;
 }
 
 .no_image
@@ -69,7 +75,6 @@ a:link
 {
   background-color: #080677;
   color: #eee;
-  float: left;
   padding: 30px;
 }
 
@@ -78,7 +83,6 @@ a:link
 	position: relative;
 	top: 33px;
 	font-size: 18px;
-	float: right;
 	margin: auto 5px auto 25px;
 }
 
@@ -97,14 +101,13 @@ a:link
 .tb_padding
 {
 	padding-top: 20px;
-	padding-bottom: 30px;	
+	padding-bottom: 20px;	
 }
 
 .icon
 {
 	width: 70px;
 	border: 0;
-	float: left;
 	margin: 20px 5px 30px 0;
 /* I like the look of this better, but assignment wants above margins
 	margin-right: 5px;
@@ -118,27 +121,68 @@ a:link
   margin: 0 auto;
 	padding-bottom: 30px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-  line-height: 150%;
+  line-height: 200%;
 }
 
 .main_content
 {
 	width: 650px;
   margin: 0 auto 40px 0;
-  float: left;
+}
+
+#bio-image
+{
+  width: 200px;
 }
 
 .sidebar
 {
 	width: 270px;
   margin: 0 auto;
-  float: right;
 }
 
-#bio-image
+.folio_row
 {
-  float: left;
-  width: 200px;
+	height: 220px;
+	max-height: 220px;
+	margin-bottom: 20px;
+}
+
+.folio_box
+{
+  width: 290px;
+	max-height: inherit;
+  position: relative;
+}
+
+.folio_image
+{
+	width: inherit;
+	max-height: inherit;
+	z-index: 1;
+}
+
+.folio_banner
+{
+	color: #efeee7;
+	background-color: #080677;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 100%;
+	position: absolute;
+	bottom: 20px;
+  z-index: 2;
+}
+
+.left
+{
+	float: left;
+}
+
+.right
+{
+	float: right;
 }
 
 .foot
@@ -148,11 +192,10 @@ a:link
 
 /*
  * sticky footer method #3
+ *
+ * I've tried the first 3 sticky footer methods from the link in the homework instructions.  All 3 place the sticky footer immediately below the visible window.
  */
-.wrapper {
+.wrapper
+{
   min-height: calc(100vh - 84px);
 }
-/*.footer {
-  height: 84px;
-}*/
-
