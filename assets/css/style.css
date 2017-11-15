@@ -22,14 +22,14 @@ footer
   font-size: 12px;
   background-image: none;
   background-color: #666;
-  border-top: 5px solid #080677;
+  border-top: 5px solid navy;
   /*margin: 40px 0 0 0;*/
 }
 
 h1
 {
 	margin: 0;
-	color: #080677;
+	color: navy;
   font-family: "Georgia",Times New Roman,Times,serif;
 	font-size: 32px;
 }
@@ -37,7 +37,7 @@ h1
 h2
 {
 	margin: 0;
-	color: #080677;
+	color: navy;
 	font-family: "Georgia",Times New Roman,Times,serif;
 	font-size: 24px;
 }
@@ -60,7 +60,7 @@ p
 
 a:link
 {
-  color: #080677;
+  color: navy;
 }
 
 .no_image
@@ -73,7 +73,7 @@ a:link
 
 .name
 {
-  background-color: #080677;
+  background-color: navy;
   color: #eee;
   padding: 30px;
 }
@@ -133,6 +133,8 @@ a:link
 #bio-image
 {
   width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .sidebar
@@ -165,7 +167,7 @@ a:link
 .folio_banner
 {
 	color: #efeee7;
-	background-color: #080677;
+	background-color: navy;
 	text-align: center;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -173,6 +175,25 @@ a:link
 	position: absolute;
 	bottom: 20px;
   z-index: 2;
+}
+
+.input
+{
+	width: 100%;
+	line-height: 200%
+}
+
+.msg_height
+{
+	height: 200px;
+}
+
+.submit
+{
+	padding: 10px 30px 10px 30px;
+	font-size: 18px;
+	background-color: navy;
+	color: #efeee7;
 }
 
 .left
