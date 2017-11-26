@@ -1,22 +1,22 @@
 *
 {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header
 {
-	height: 92px;
-	margin: 0 0 40px 0;
+  height: 92px;
+  margin: 0 0 40px 0;
   padding: 0;
   background-color: #efeee7;
 }
 
 footer
 {
-	display: block;
-	clear: both;
-	height: 92px;
-	width: 100%;
+  display: block;
+  clear: both;
+  height: 92px;
+  width: 100%;
   padding: 0;
   text-align: center;
   font-size: 12px;
@@ -28,34 +28,34 @@ footer
 
 h1
 {
-	margin: 0;
-	color: navy;
+  margin: 0;
+  color: navy;
   font-family: "Georgia",Times New Roman,Times,serif;
-	font-size: 32px;
+  font-size: 32px;
 }
 
 h2
 {
-	margin: 0;
-	color: navy;
-	font-family: "Georgia",Times New Roman,Times,serif;
-	font-size: 24px;
+  margin: 0;
+  color: navy;
+  font-family: "Georgia",Times New Roman,Times,serif;
+  font-size: 24px;
 }
 
 body
 {
-	background-image: url("../images/vintage-concrete.png");
+  background-image: url("../images/vintage-concrete.png");
   color: #333333;
-	margin: 0;
+  margin: 0;
   padding: 0;
-	/* sticky footer */
+  /* sticky footer */
   height: 100%;
   margin: 0;
 }
 
 p
 {
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 a:link
@@ -65,9 +65,9 @@ a:link
 
 .no_image
 {
-	/* I understand the technical reasons for the assignment to require a separate background for the content vs the generic textured background, but I think it looks better with just the texture.
-	*/
-	background-image: none;
+  /* I understand the technical reasons for the assignment to require a separate background for the content vs the generic textured background, but I think it looks better with just the texture.
+  */
+  background-image: none;
   background-color: #efeee7;
 }
 
@@ -80,53 +80,53 @@ a:link
 
 .nav
 {
-	position: relative;
-	top: 33px;
-	font-size: 18px;
-	margin: auto 5px auto 25px;
+  position: relative;
+  top: 33px;
+  font-size: 18px;
+  margin: auto 5px auto 25px;
 }
 
 .heading_pad
 {
-	padding-top: 30px;
-	padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 .lr_margin
 {
-	margin-left: 20px;
-	margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .tb_padding
 {
-	padding-top: 20px;
-	padding-bottom: 20px;	
+  padding-top: 20px;
+  padding-bottom: 20px;  
 }
 
 .icon
 {
-	width: 70px;
-	border: 0;
-	margin: 20px 5px 30px 0;
+  width: 70px;
+  border: 0;
+  margin: 20px 5px 30px 0;
 /* I like the look of this better, but assignment wants above margins
-	margin-right: 5px;
-	margin-bottom: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 */
 }
 
 .all_content
 {
-	width: 960px;
+  width: 960px;
   margin: 0 auto;
-	padding-bottom: 30px;
+  padding-bottom: 30px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   line-height: 200%;
 }
 
 .main_content
 {
-	width: 650px;
+  width: 650px;
   margin: 0 auto 40px 0;
 }
 
@@ -139,76 +139,76 @@ a:link
 
 .sidebar
 {
-	width: 270px;
+  width: 270px;
   margin: 0 auto;
 }
 
 .folio_row
 {
-	height: 220px;
-	max-height: 220px;
-	margin-bottom: 20px;
+  height: 220px;
+  max-height: 220px;
+  margin-bottom: 20px;
 }
 
 .folio_box
 {
   width: 290px;
-	max-height: inherit;
+  max-height: inherit;
   position: relative;
 }
 
 .folio_image
 {
-	width: inherit;
-	max-height: inherit;
-	z-index: 1;
+  width: inherit;
+  max-height: inherit;
+  z-index: 1;
 }
 
 .folio_banner
 {
-	color: #efeee7;
-	background-color: navy;
-	text-align: center;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	width: 100%;
-	position: absolute;
-	bottom: 20px;
+  color: #efeee7;
+  background-color: navy;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
   z-index: 2;
 }
 
 .input
 {
-	width: 100%;
-	line-height: 200%
+  width: 100%;
+  line-height: 200%
 }
 
 .msg_height
 {
-	height: 200px;
+  height: 200px;
 }
 
 .submit
 {
-	padding: 10px 30px 10px 30px;
-	font-size: 18px;
-	background-color: navy;
-	color: #efeee7;
+  padding: 10px 30px 10px 30px;
+  font-size: 18px;
+  background-color: navy;
+  color: #efeee7;
 }
 
 .left
 {
-	float: left;
+  float: left;
 }
 
 .right
 {
-	float: right;
+  float: right;
 }
 
 .foot
 {
-	padding-top: 50px;
+  padding-top: 50px;
 }
 
 /*
@@ -218,5 +218,5 @@ a:link
  */
 .wrapper
 {
-  min-height: calc(100vh - 84px);
+  min-height: calc(100vh - 92px);
 }
